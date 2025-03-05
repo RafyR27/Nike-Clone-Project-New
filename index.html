@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Nike Clone</title>
+</head>
+<body>
+    <header>
+        <div class="w-full h-[70px] lg:h-[65px] bg-white flex fixed justify-between items-center top-0 z-10">
+            <div class="w-full h-[40px] top-0 bg-white absolute -z-1"></div>
+            <img class="w-[60px] ml-[30px] lg:ml-[40px] lg:mr-[200px]" src="/public/img/nike.png">
+            <div id="menu-lg" class="hidden lg:flex font-opensans text-black">
+                <ul class="flex gap-6 text-center font-semibold">
+                    <div class="group">
+                        <li class="hover:underline-offset-5 hover:underline hover:cursor-pointer">New & Featured</li>
+                        <div class="w-full h-[55vh] -z-10 left-0 bg-white absolute flex top-10 justify-center gap-[90px] text-left pt-[60px] -translate-y-[110%] group-hover:-translate-y-0  group-hover:transition-all group-hover:duration-200">
+                            <div>
+                                <h2 class="font-bold mb-5 text-[14px]">Featured</h2>
+                                <ul class="text-gray-700 text-[12px] flex flex-col gap-2">
+                                    <li class="hover:text-black"><a href="#">New & Upcoming Drops</a></li>
+                                    <li class="hover:text-black"><a href="#">New Arrivals</a></li>
+                                    <li class="hover:text-black"><a href="#">Bestsellers</a></li>
+                                    <li class="hover:text-black"><a href="#">SNKRS Launch Calendar</a></li>
+                                    <li class="hover:text-black"><a href="#">Member Exclusive</a></li>
+                                    <li class="hover:text-black"><a href="#">Customise with Nike By You</a></li>
+                                    <li class="hover:text-black"><a href="#">Jordan</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h2 class="font-bold mb-5 text-[14px]">Trending</h2>
+                                <ul class="text-gray-700 text-[12px] flex flex-col gap-2">
+                                    <li class="hover:text-black"><a href="#">Air Max Dn8</a></li>
+                                    <li class="hover:text-black"><a href="#">What's Trending</a></li>
+                                    <li class="hover:text-black"><a href="#">Nike 24.7</a></li>
+                                    <li class="hover:text-black"><a href="#">Trending Now: Espresso ❤️</a></li>
+                                    <li class="hover:text-black"><a href="#">Retro Running</a></li>
+                                    <li class="hover:text-black"><a href="#">Running Shoe Finder</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h2 class="font-bold mb-5 text-[14px]">Shop Icons</h2>
+                                <ul class="text-gray-700 text-[12px] flex flex-col gap-2">
+                                    <li class="hover:text-black"><a href="#">Lifestyle</a></li>
+                                    <li class="hover:text-black"><a href="#">Air Force 1</a></li>
+                                    <li class="hover:text-black"><a href="#">Air Jordan 1</a></li>
+                                    <li class="hover:text-black"><a href="#">Air Max</a></li>
+                                    <li class="hover:text-black"><a href="#">Dunk</a></li>
+                                    <li class="hover:text-black"><a href="#">Cortez</a></li>
+                                    <li class="hover:text-black"><a href="#">Blazer</a></li>
+                                    <li class="hover:text-black"><a href="#">Pegasus</a></li>
+                                    <li class="hover:text-black"><a href="#">Vomero</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h2 class="font-bold mb-5 text-[14px]">Shop By Sport</h2>
+                                <ul class="text-gray-700 text-[12px] flex flex-col gap-[6px]">
+                                    <li class="hover:text-black"><a href="#">Running</a></li>
+                                    <li class="hover:text-black"><a href="#">Basketball</a></li>
+                                    <li class="hover:text-black"><a href="#">Football</a></li>
+                                    <li class="hover:text-black"><a href="#">Golf</a></li>
+                                    <li class="hover:text-black"><a href="#">Tennis</a></li>
+                                    <li class="hover:text-black"><a href="#">Gym and Training</a></li>
+                                    <li class="hover:text-black"><a href="#">Yoga</a></li>
+                                    <li class="hover:text-black"><a href="#">Skateboarding</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <li class="hover:underline-offset-5 hover:underline hover:cursor-pointer">Men</li>
+                        <div class="w-full h-[60vh] -z-10 left-0 bg-white absolute flex top-10 justify-center gap-[95px] text-left pt-[60px] -translate-y-[110%] group-hover:-translate-y-0 group-hover:transition-all group-hover:duration-200">
+                            <div>
+                                <h2 class="font-bold mb-5 text-[14px]">Featured</h2>
+                                <ul class="text-gray-700 text-[12px] flex flex-col gap-2">
+                                    <li class="hover:text-black"><a href="#">New Arrivals</a></li>
+                                    <li class="hover:text-black"><a href="#">Bestsellers</a></li>
+                                    <li class="hover:text-black"><a href="#">Shop All Sale</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h2 class="font-bold mb-5 text-[14px]">Shoes</h2>
+                                <ul class="text-gray-700 text-[12px] flex flex-col gap-2">
+                                    <li class="hover:text-black"><a href="#">All Shoes</a></li>
+                                    <li class="hover:text-black"><a href="#">Lifestyle</a></li>
+                                    <li class="hover:text-black"><a href="#">Jordan</a></li>
+                                    <li class="hover:text-black"><a href="#">Running</a></li>
+                                    <li class="hover:text-black"><a href="#">Football</a></li>
+                                    <li class="hover:text-black"><a href="#">Basketball</a></li>
+                                    <li class="hover:text-black"><a href="#">Gym and Training</a></li>
+                                    <li class="hover:text-black"><a href="#">Skateboarding</a></li>
+                                    <li class="hover:text-black"><a href="#">Sandals and Slides</a></li>
+                                    <li class="hover:text-black"><a href="#">Nike By You</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h2 class="font-bold mb-5 text-[14px]">Clothing</h2>
+                                <ul class="text-gray-700 text-[12px] flex flex-col gap-2">
+                                    <li class="hover:text-black"><a href="#">All Clothing</a></li>
+                                    <li class="hover:text-black"><a href="#">Tops and T-Shirts</a></li>
+                                    <li class="hover:text-black"><a href="#">Shorts</a></li>
+                                    <li class="hover:text-black"><a href="#">Pants and Leggings</a></li>
+                                    <li class="hover:text-black"><a href="#">Hoodies and Sweatshirts</a></li>
+                                    <li class="hover:text-black"><a href="#">Jackets and Gilets</a></li>
+                                    <li class="hover:text-black"><a href="#">Jerseys and Kits</a></li>
+                                    <li class="hover:text-black"><a href="#">Jordan</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h2 class="font-bold mb-5 text-[14px]">Shop By Sport</h2>
+                                <ul class="text-gray-700 text-[12px] flex flex-col gap-[6px]">
+                                    <li class="hover:text-black"><a href="#">Running</a></li>
+                                    <li class="hover:text-black"><a href="#">Basketball</a></li>
+                                    <li class="hover:text-black"><a href="#">Football</a></li>
+                                    <li class="hover:text-black"><a href="#">Golf</a></li>
+                                    <li class="hover:text-black"><a href="#">Tennis</a></li>
+                                    <li class="hover:text-black"><a href="#">Gym and Training</a></li>
+                                    <li class="hover:text-black"><a href="#">Yoga</a></li>
+                                    <li class="hover:text-black"><a href="#">Skateboarding</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h2 class="font-bold mb-5 text-[14px]">Accessories and Equipment</h2>
+                                <ul class="text-gray-700 text-[12px] flex flex-col gap-[6px]">
+                                    <li class="hover:text-black"><a href="#">All Accessories and Equipment</a></li>
+                                    <li class="hover:text-black"><a href="#">Bags and Backpacks</a></li>
+                                    <li class="hover:text-black"><a href="#">Socks</a></li>
+                                    <li class="hover:text-black"><a href="#">Hats and Headwear</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <li class="hover:underline-offset-5 hover:underline hover:cursor-pointer">Women</li>
+                        <div class="w-full h-[65vh] -z-10 left-0 bg-white absolute flex top-10 justify-center gap-[90px] text-left pt-[60px] -translate-y-[110%] group-hover:-translate-y-0 group-hover:transition-all group-hover:duration-200">
+                            <div>
+                                <h2 class="font-bold mb-5 text-[14px]">Featured</h2>
+                                <ul class="text-gray-700 text-[12px] flex flex-col gap-2">
+                                    <li class="hover:text-black"><a href="#">New Arrivals</a></li>
+                                    <li class="hover:text-black"><a href="#">Bestsellers</a></li>
+                                    <li class="hover:text-black"><a href="#">Shop All Sale</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h2 class="font-bold mb-5 text-[14px]">Shoes</h2>
+                                <ul class="text-gray-700 text-[12px] flex flex-col gap-2">
+                                    <li class="hover:text-black"><a href="#">All Shoes</a></li>
+                                    <li class="hover:text-black"><a href="#">Lifestyle</a></li>
+                                    <li class="hover:text-black"><a href="#">Jordan</a></li>
+                                    <li class="hover:text-black"><a href="#">Running</a></li>
+                                    <li class="hover:text-black"><a href="#">Gym and Training</a></li>
+                                    <li class="hover:text-black"><a href="#">Football</a></li>
+                                    <li class="hover:text-black"><a href="#">Basketball</a></li>
+                                    <li class="hover:text-black"><a href="#">Sandals and Slides</a></li>
+                                    <li class="hover:text-black"><a href="#">Nike By You</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h2 class="font-bold mb-5 text-[14px]">Clothing</h2>
+                                <ul class="text-gray-700 text-[12px] flex flex-col gap-2">
+                                    <li class="hover:text-black"><a href="#">All Clothing</a></li>
+                                    <li class="hover:text-black"><a href="#">Performance Essentials</a></li>
+                                    <li class="hover:text-black"><a href="#">Tops and T-Shirts</a></li>
+                                    <li class="hover:text-black"><a href="#">Sports Bras</a></li>
+                                    <li class="hover:text-black"><a href="#">Pants and Leggings</a></li>
+                                    <li class="hover:text-black"><a href="#">Shorts</a></li>
+                                    <li class="hover:text-black"><a href="#">Hoodies and Sweatshirts</a></li>
+                                    <li class="hover:text-black"><a href="#">Jackets and Gilets</a></li>
+                                    <li class="hover:text-black"><a href="#">Skirts and Dresses</a></li>
+                                    <li class="hover:text-black"><a href="#">Modest Wear</a></li>
+                                    <li class="hover:text-black"><a href="#">Nike Maternity</a></li>
+                                    <li class="hover:text-black"><a href="#">Plus Size</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h2 class="font-bold mb-5 text-[14px]">Shop By Sport</h2>
+                                <ul class="text-gray-700 text-[12px] flex flex-col gap-[6px]">
+                                    <li class="hover:text-black"><a href="#">Yoga</a></li>
+                                    <li class="hover:text-black"><a href="#">Running</a></li>
+                                    <li class="hover:text-black"><a href="#">Gym and Training</a></li>
+                                    <li class="hover:text-black"><a href="#">Basketball</a></li>
+                                    <li class="hover:text-black"><a href="#">Tennis</a></li>
+                                    <li class="hover:text-black"><a href="#">Golf</a></li>
+                                    <li class="hover:text-black"><a href="#">Football</a></li>
+                                    <li class="hover:text-black"><a href="#">Skateboarding</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h2 class="font-bold mb-5 text-[14px]">Accessories and Equipment</h2>
+                                <ul class="text-gray-700 text-[12px] flex flex-col gap-[6px]">
+                                    <li class="hover:text-black"><a href="#">All Accessories and Equipment</a></li>
+                                    <li class="hover:text-black"><a href="#">Bags and Backpacks</a></li>
+                                    <li class="hover:text-black"><a href="#">Socks</a></li>
+                                    <li class="hover:text-black"><a href="#">Hats and Headwear</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="group">
+                        <li class="hover:underline-offset-5 hover:underline hover:cursor-pointer">Kids</li>
+                        <div class="w-full h-[55vh] -z-10 left-0 bg-white absolute flex top-10 justify-center gap-[90px] text-left pt-[60px] -translate-y-[110%] group-hover:-translate-y-0 group-hover:transition-all group-hover:duration-200">
+                            <div>
+                                <h2 class="font-bold mb-5 text-[14px]">Featured</h2>
+                                <ul class="text-gray-700 text-[12px] flex flex-col gap-2">
+                                    <li class="hover:text-black"><a href="#">New Arrivals</a></li>
+                                    <li class="hover:text-black"><a href="#">Bestsellers</a></li>
+                                    <li class="hover:text-black"><a href="#">Back to School</a></li>
+                                    <li class="hover:text-black"><a href="#">Sport Gear</a></li>
+                                    <li class="hover:text-black"><a href="#">Lifestyle Looks</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h2 class="font-bold mb-5 text-[14px]">Shoes</h2>
+                                <ul class="text-gray-700 text-[12px] flex flex-col gap-2">
+                                    <li class="hover:text-black"><a href="#">All Shoes</a></li>
+                                    <li class="hover:text-black"><a href="#">Lifestyle</a></li>
+                                    <li class="hover:text-black"><a href="#">Jordan</a></li>
+                                    <li class="hover:text-black"><a href="#">Football</a></li>
+                                    <li class="hover:text-black"><a href="#">Running</a></li>
+                                    <li class="hover:text-black"><a href="#">Basketball</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h2 class="font-bold mb-5 text-[14px]">Clothing</h2>
+                                <ul class="text-gray-700 text-[12px] flex flex-col gap-2">
+                                    <li class="hover:text-black"><a href="#">All Clothing</a></li>
+                                    <li class="hover:text-black"><a href="#">Tops and T-Shirts</a></li>
+                                    <li class="hover:text-black"><a href="#">Sport Bras</a></li>
+                                    <li class="hover:text-black"><a href="#">Hoodies and Sweatshirts</a></li>
+                                    <li class="hover:text-black"><a href="#">Pants and Leggings</a></li>
+                                    <li class="hover:text-black"><a href="#">Shorts</a></li>
+                                    <li class="hover:text-black"><a href="#">Jackets and Gilets</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h2 class="font-bold mb-5 text-[14px]">Kids By Age</h2>
+                                <ul class="text-gray-700 text-[12px] flex flex-col gap-[6px]">
+                                    <li class="hover:text-black"><a href="#">Older Kids (7 - 14 years)</a></li>
+                                    <li class="hover:text-black"><a href="#">Younger Kids (4 - 7 years)</a></li>
+                                    <li class="hover:text-black"><a href="#">Babies & Toddlers (0 - 4 years)</a></li>
+                                </ul>
+                                <h2 class="font-bold mb-5 text-[14px] mt-5">Shop By Sports</h2>
+                                <ul class="text-gray-700 text-[12px] flex flex-col gap-[6px]">
+                                    <li class="hover:text-black"><a href="#">Football</a></li>
+                                    <li class="hover:text-black"><a href="#">Running</a></li>
+                                    <li class="hover:text-black"><a href="#">Basketball</a></li>
+                                    <li class="hover:text-black"><a href="#">Gym and Training</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h2 class="font-bold mb-5 text-[14px]">Accessories and Equipment</h2>
+                                <ul class="text-gray-700 text-[12px] flex flex-col gap-[6px]">
+                                    <li class="hover:text-black"><a href="#">All Accessories and Equipment</a></li>
+                                    <li class="hover:text-black"><a href="#">Bags and Backpacks</a></li>
+                                    <li class="hover:text-black"><a href="#">Socks</a></li>
+                                    <li class="hover:text-black"><a href="#">Hats and Headwear</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <li class="hover:underline-offset-5 hover:underline hover:cursor-pointer">Sale</li>
+                        <div class="w-full h-[40vh] -z-10 left-0 bg-white absolute flex top-10 justify-center gap-[90px] text-left pt-[60px] -translate-y-[110%] group-hover:-translate-y-0 group-hover:transition-all group-hover:duration-200">
+                            <div>
+                                <h2 class="font-bold mb-5 text-[14px]">Sale & Offers</h2>
+                                <ul class="text-gray-700 text-[12px] flex flex-col gap-2">
+                                    <li class="hover:text-black"><a href="#">Shop All Sale</a></li>
+                                    <li class="hover:text-black"><a href="#">Bestsellers</a></li>
+                                    <li class="hover:text-black"><a href="#">Last Chance</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h2 class="font-bold mb-5 text-[14px]">Men's Sale</h2>
+                                <ul class="text-gray-700 text-[12px] flex flex-col gap-2">
+                                    <li class="hover:text-black"><a href="#">Shoes</a></li>
+                                    <li class="hover:text-black"><a href="#">Clothing</a></li>
+                                    <li class="hover:text-black"><a href="#">Accessories and Equipment</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h2 class="font-bold mb-5 text-[14px]">Women's Sale</h2>
+                                <ul class="text-gray-700 text-[12px] flex flex-col gap-2">
+                                    <li class="hover:text-black"><a href="#">Shoes</a></li>
+                                    <li class="hover:text-black"><a href="#">Clothing</a></li>
+                                    <li class="hover:text-black"><a href="#">Accessories and Equipment</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h2 class="font-bold mb-5 text-[14px]">Kids' Sale</h2>
+                                <ul class="text-gray-700 text-[12px] flex flex-col gap-2">
+                                    <li class="hover:text-black"><a href="#">Shoes</a></li>
+                                    <li class="hover:text-black"><a href="#">Clothing</a></li>
+                                    <li class="hover:text-black"><a href="#">Accessories and Equipment</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h2 class="font-bold mb-5 text-[14px]">Shop By Sports</h2>
+                                <ul class="text-gray-700 text-[12px] flex flex-col gap-[6px]">
+                                    <li class="hover:text-black"><a href="#">Football</a></li>
+                                    <li class="hover:text-black"><a href="#">Running</a></li>
+                                    <li class="hover:text-black"><a href="#">Basketball</a></li>
+                                    <li class="hover:text-black"><a href="#">Gym and Training</a></li>
+                                    <li class="hover:text-black"><a href="#">Tennis</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>                    
+                    <li id="SNKRS" class="hover:underline-offset-5 hover:underline hover:cursor-pointer">SNKRS</li>
+                </ul>
+            </div>
+            <div class="flex gap-3 mr-[20px] lg:mr-[40px]">
+                <div id="search-lg-menu" class="group hidden lg:block">
+                    <a class="icon-hover-search absolute"><i class="fa-solid fa-magnifying-glass fa-lg" style="color: gray;"></i></a>
+                    <input class="bg-[#F5F5F5] py-[5px] w-[170px] px-2 pl-10 text-[17px] text-black font-semibold rounded-full focus:outline-none group-hover:bg-gray-200" type="search" placeholder="Search">
+                </div>
+                <a id="search-lg" class="icon-hover"><i id="search" class="fa-solid fa-magnifying-glass fa-lg" style="color: gray;"></i></a>
+                <a class="icon-hover"><i class="fa-regular fa-user fa-lg" style="color: gray;"></i></a>
+                <a class="icon-hover"><i class="fa-solid fa-bag-shopping fa-lg" style="color: gray;"></i></a>
+                <a id="hamburger" class="icon-hover"><i id="menu" class="fa-solid fa-bars fa-lg" style="color: gray;"></i></a>
+            </div>
+        </div>
+        <div id="search-menu" class="w-[100%] h-[100vh] bg-white font-opensans absolute top-0 right-0 left-0 z-100 lg:h-[50vh]">
+            <div class="relative flex justify-between items-center mt-[15px] mx-6 lg:mx-10">
+                <img class="w-[60px] hidden lg:flex" src="/public/img/nike.png">
+                <div class="group ">
+                    <a class="icon-hover-search absolute"><i class="fa-solid fa-magnifying-glass fa-lg" style="color: gray;"></i></a>
+                    <input id="search-input" class="bg-[#F5F5F5] w-[100%] py-[5px] px-6 pl-10 text-[17px] text-black font-bold rounded-full focus:outline-none group-hover:bg-gray-200 lg:w-[800px]" type="search" placeholder="Search">
+                </div>
+                <a id="cancel-search"><p class="font-semibold text-[17px] hover:text-gray-500 cursor-pointer">Cancel</p></a>
+            </div>
+            <div class="mt-[40px] mx-6 lg:mt-[60px] lg:mx-[370px]">
+                <h1 class="text-[15px] text-gray-500 font-semibold">Popular Search Terms</h1>
+                <div class="grid grid-cols-3 gap-3 mt-[20px] lg:grid-cols-5 lg:gap-4">
+                    <a><button class="text-[17px] text-black font-bold text-center px-4 py-2 rounded-full bg-[#F5F5F5] hover:bg-gray-200">air max</button></a>
+                    <a><button class="text-[17px] text-black font-bold text-center px-4 py-2 rounded-full bg-[#F5F5F5] hover:bg-gray-200">air max</button></a>
+                    <a><button class="text-[17px] text-black font-bold text-center px-4 py-2 rounded-full bg-[#F5F5F5] hover:bg-gray-200">air max</button></a>
+                    <a><button class="text-[17px] text-black font-bold text-center px-4 py-2 rounded-full bg-[#F5F5F5] hover:bg-gray-200">air max</button></a>
+                    <a><button class="text-[17px] text-black font-bold text-center px-4 py-2 rounded-full bg-[#F5F5F5] hover:bg-gray-200">air max</button></a>
+                    <a><button class="text-[17px] text-black font-bold text-center px-4 py-2 rounded-full bg-[#F5F5F5] hover:bg-gray-200">air max</button></a>
+                    <a><button class="text-[17px] text-black font-bold text-center px-4 py-2 rounded-full bg-[#F5F5F5] hover:bg-gray-200">air max</button></a>
+                    <a><button class="text-[17px] text-black font-bold text-center px-4 py-2 rounded-full bg-[#F5F5F5] hover:bg-gray-200">air max</button></a>
+                    <a><button class="text-[17px] text-black font-bold text-center px-4 py-2 rounded-full bg-[#F5F5F5] hover:bg-gray-200">air max</button></a>
+                </div>
+            </div>
+        </div>
+        <div id="overlay" class="w-[100%] h-[100vh] top-0 right-0 bg-black opacity-50 fixed z-40 hidden"></div>
+        <nav class="w-[82%] h-full bg-white absolute items-end right-0 top-0 z-50">
+            <div id="menu-close" class="flex justify-end px-9 pt-7 pb-5">
+                <a class="icon-hover"><i class="fa-solid fa-x fa-lg"></i></a>
+            </div>
+            <ul class="font-opensans font-semibold flex flex-col gap-5 px-9 pt-5 pb-9">
+                <a class="font-size" href=""><li>New</li><img class="icon-size" src="/public/icon/arrow.png" alt=""></a>
+                <a class="font-size" href=""><li>New</li><img class="icon-size" src="/public/icon/arrow.png" alt=""></a>
+                <a class="font-size" href=""><li>New</li><img class="icon-size" src="/public/icon/arrow.png" alt=""></a>
+                <a class="font-size" href=""><li>New</li><img class="icon-size" src="/public/icon/arrow.png" alt=""></a>
+                <a class="font-size" href=""><li>New</li><img class="icon-size" src="/public/icon/arrow.png" alt=""></a>
+            </ul>
+            <p class="px-9 pt-9 pb-4 text-left text-[19px] font-opensans text-gray-600 font-semibold">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, accusamus! <a class="text-black font-semibold">Learn more</a></p>
+            <div class="flex px-9 pb-20 gap-3">
+                <button class="w-[85px] h-[40px] font-opensans text-[15px] bg-black text-white font-semibold rounded-full self-center hover:bg-gray-600">Join Us</button>
+                <button class="w-[85px] h-[40px] font-opensans text-[15px] bg-white text-black border-[1px] border-gray-300 font-semibold rounded-full self-center hover:bg-gray-600">Sign In</button>
+            </div>
+            <div class="flex flex-col px-9 pb-[200px] gap-4 items-start self-center">
+                <a class="font-opensans flex gap-5 text-[17px] font-semibold text-black items-center"><i class="fa-regular fa-circle-question fa-lg"></i>Help</a>
+                <a class="font-opensans flex gap-5 text-[19px] font-semibold text-black items-center"><i class="fa-solid fa-bag-shopping fa-lg"></i> Bag</a>
+                <a class="font-opensans flex gap-5 text-[17px] font-semibold text-black items-center"><i class="fa-solid fa-box-open"></i>Orders</a>
+                <a class="font-opensans flex gap-5 text-[19px] f
+                ont-semibold text-black items-center"><i class="fa-solid fa-store"></i>Find a Store</a>
+            </div>
+        </nav>
+    </header>
+    
+    <section class="relative w-full h-[70px] bg-gray-100 mt-20 border-b-[1px] border-gray-300 overflow-hidden flex -z-1 lg:mt-[60px] lg:justify-center lg:items-center lg:text-center">
+        <p class="font-opensans text-center
+        py-3 px-2 font-semibold text-[12px] flex items-center justify-center text-black">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat doloribus ad aspernatur.</p>
+    </section>
+
+    <section class="w-full h-[87vh] bg-white">
+        <div class="flex flex-col items-center bg-cover bg-center lg:w-[100%] lg:h-[80%] lg:bg-[url(/public/img/sepatu-utama-lg.jpg)]">
+            <img class="max-w-[350px] h-full mt-2 lg:hidden" src="/public/img/sepatu-utama.jpg" alt="">
+        </div>
+        <div class="text-left ml-6 lg:flex lg:flex-col lg:justify-center lg:items-center lg:ml-0">
+            <h1 class="font-opensans font-extrabold uppercase text-4xl mt-[40px] lg:text-7xl">Nike Shoes</h1>
+            <p class="font-opensans font-semibold mt-[5px] lg:mt-[15px] lg:text-[17px]">Coming X.2X</p>
+            <a class="font-opensans font-semibold rounded-full bg-black text-white text-center py-[7px] hover:bg-gray-600 lg:mt-[40px]" href=""><button class="w-[108px] mt-9  lg:mt-0 ">Notify Me</button></a>
+        </div>     
+    </section>
+
+    <section class="w-full h-[60vh] mt-[20px] bg-white font-opensans lg:mt-[180px]">
+        <div class="flex flex-col gap-5 ml-12 mr-6 lg:mx-28">
+            <h1 class="font-semibold text-[24px]">Shop by Icons</h1>
+            <div class="flex gap-4 overflow-x-auto lg:overflow-hidden lg:hover:overflow-x-auto">
+                <img class="katalog-1" src="public/img/katalog.png" alt="">
+                <img class="katalog-1" src="public/img/katalog.png" alt="">
+                <img class="katalog-1" src="public/img/katalog.png" alt="">
+                <img class="katalog-1" src="public/img/katalog.png" alt="">
+                <img class="katalog-1" src="public/img/katalog.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-full h-[120vh] mt-[20px] bg-white font-opensans lg:mt-[190px] lg:mx-[25px] lg:right-1">
+        <h1 class="font-bold text-3xl mx-6">Don't Miss</h1>
+        <div class="flex flex-col mx-6 gap-1 lg:items-center">
+            <div class="lg:mt-[30px] lg:mb-[20px] lg:w-full lg:h-[85vh] lg:bg-[url(/public/img/dont-miss.jpg)] lg:bg-center"></div>
+            <img class="max-w-[350px] mt-[30px] mb-[20px] lg:hidden" src="public/img/dont-miss.jpg" alt="">
+            <h2 class="font-semibold text-[17px]">Men's Air Jordan</h2>
+            <p class="font-extrabold text-4xl left-0 lg:text-7xl">Ride Easy</p>
+            <p class="font-semibold text-[15px] lg:mt-[15px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam accusantium quos laboriosam?</p>
+            <a href=""><button class="bg-black text-white font-semibold px-6 py-2 text-center rounded-full text-[17px] mt-[30px] hover:bg-gray-600 lg:mt-[50px]">Shop</button></a>
+        </div>
+    </section>
+
+    <section class="max-w-full h-[60vh] mt-[20px] bg-white font-opensans lg:mt-[200px] lg:mx-[25px]">
+        <div class="flex flex-col gap-6 mx-6">
+            <h1 class="font-semibold text-[22px]">Trending Now: Triple White</h1>
+            <div class="flex gap-4 overflow-x-auto lg:overflow-hidden lg:hover:overflow-x-auto">
+                <img class="katalog-1" src="public/img/katalog-2.jpg" alt="">
+                <img class="katalog-1" src="public/img/katalog-2.jpg" alt="">
+                <img class="katalog-1" src="public/img/katalog-2.jpg" alt="">
+                <img class="katalog-1" src="public/img/katalog-2.jpg" alt="">
+                <img class="katalog-1" src="public/img/katalog-2.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="w-full h-[70vh] mt-[20px] bg-white font-opensans lg:mt-[180px]">
+        <div class="flex flex-col gap-5 ml-12 mr-6 lg:mx-28 ">
+            <h1 class="font-semibold text-[22px]">Member Benefits</h1>
+            <div class="flex gap-4 overflow-x-auto pb-[60px] lg:overflow-hidden lg:hover:overflow-x-auto">
+                <div class="relative min-w-[300px] lg:min-w-[400px]">
+                    <img class="katalog-member" src="public/img/member.png" alt="">
+                    <div class="flex flex-col gap-1 absolute bottom-5 inset-x-0 ml-10 w-[200px]">
+                        <h1 class="text-white font-bold text-[15px]">Member Product</h1>
+                        <h2 class="text-white font-semibold text-[18px]">Your Exclusive Access</h2>
+                        <a href=""><button class="bg-white text-black px-4 py-2 text-[15px] rounded-full font-bold mt-[20px] hover:bg-gray-300">Shop</button></a>
+                    </div>
+                </div>
+                <div class="relative min-w-[300px] lg:min-w-[400px]">
+                    <img class="katalog-member" src="public/img/member.png" alt="">
+                    <div class="flex flex-col gap-1 absolute bottom-5 inset-x-0 ml-10 w-[200px]">
+                        <h1 class="text-white font-bold text-[15px]">Member Product</h1>
+                        <h2 class="text-white font-semibold text-[18px]">Your Exclusive Access</h2>
+                        <a href=""><button class="bg-white text-black px-4 py-2 text-[15px] rounded-full font-bold mt-[20px] hover:bg-gray-300">Shop</button></a>
+                    </div>
+                </div>
+                <div class="relative min-w-[300px] lg:min-w-[400px]">
+                    <img class="katalog-member" src="public/img/member.png" alt="">
+                    <div class="flex flex-col gap-1 absolute bottom-5 inset-x-0 ml-10 w-[200px]">
+                        <h1 class="text-white font-bold text-[15px]">Member Product</h1>
+                        <h2 class="text-white font-semibold text-[18px]">Your Exclusive Access</h2>
+                        <a href=""><button class="bg-white text-black px-4 py-2 text-[15px] rounded-full font-bold mt-[20px] hover:bg-gray-300">Shop</button></a>
+                    </div>
+                </div>
+                <div class="relative min-w-[300px] lg:min-w-[400px]">
+                    <img class="katalog-member" src="public/img/member.png" alt="">
+                    <div class="flex flex-col gap-1 absolute bottom-5 inset-x-0 ml-10 w-[200px]">
+                        <h1 class="text-white font-bold text-[15px]">Member Product</h1>
+                        <h2 class="text-white font-semibold text-[18px]">Your Exclusive Access</h2>
+                        <a href=""><button class="bg-white text-black px-4 py-2 text-[15px] rounded-full font-bold mt-[20px] hover:bg-gray-300">Shop</button></a>
+                    </div>
+                </div>
+                <div class="relative min-w-[300px] lg:min-w-[400px]">
+                    <img class="katalog-member" src="public/img/member.png" alt="">
+                    <div class="flex flex-col gap-1 absolute bottom-5 inset-x-0 ml-10 w-[200px]">
+                        <h1 class="text-white font-bold text-[15px]">Member Product</h1>
+                        <h2 class="text-white font-semibold text-[18px]">Your Exclusive Access</h2>
+                        <a href=""><button class="bg-white text-black px-4 py-2 text-[15px] rounded-full font-bold mt-[20px] hover:bg-gray-300">Shop</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="w-full h-[90vh] mt-[20px] bg-white font-opensans lg:mt-[200px] lg:h-[80vh]">
+        <div class="flex flex-col gap-[30px] mx-6 text-[15px] font-semibold hover:cursor-pointer border-t-1 border-gray-300 lg:flex-row lg:justify-between lg:mx-[70px] lg:hover:cursor-text">
+            <div id="footer-menu-1">
+                <a id="menu-1" class="flex justify-between border-b-1 border-gray-300 pb-[30px] pt-[60px] lg:border-0 lg:pointer-events-none" href=""><p >Resources</p><img id="farrow1" class="icon-size self-center rotate-90 lg:hidden lg:pointer-events-none" src="public/icon/arrow.png" alt=""></a>
+                <div id="fmenu-1" class="w-full h-auto absolute text-gray-500 flex flex-col gap-3 -translate-y-[180px] opacity-0 -z-1 lg:opacity-100 lg:translate-y-0 lg:z-1">
+                    <a class="hover:text-black" href=""><p>Find A Store</p></a>
+                    <a class="hover:text-black" href=""><p>Become A Member</p></a>
+                    <a class="hover:text-black" href=""><p>Education Discounts</p></a>
+                    <a class="hover:text-black" href=""><p>Send Us Feedback</p></a>
+                </div>
+            </div>
+            <div id="footer-menu-2">
+                <a id="menu-2" class="flex justify-between border-b-1 border-gray-300 pb-[30px] lg:border-0 lg:pt-[60px] lg:pointer-events-none" href=""><p >Help</p><img id="farrow2" class="icon-size self-center rotate-90 lg:hidden" src="public/icon/arrow.png" alt=""></a>
+                <div id="fmenu-2" class="w-full h-auto absolute text-gray-500 flex flex-col gap-3 -translate-y-[220px] opacity-0 -z-1 lg:opacity-100 lg:translate-y-0 lg:z-1">
+                    <a class="hover:text-black" href=""><p>Get Help</p></a>
+                    <a class="hover:text-black" href=""><p>Order Status</p></a>
+                    <a class="hover:text-black" href=""><p>Delivery</p></a>
+                    <a class="hover:text-black" href=""><p>Returns</p></a>
+                    <a class="hover:text-black" href=""><p>Payment Options</p></a>
+                    <a class="hover:text-black" href=""><p>Contact Us</p></a>
+                </div>
+            </div>
+            <div id="footer-menu-3">
+                <a id="menu-3" class="flex justify-between border-b-1 border-gray-300 pb-[30px] lg:border-0 lg:pt-[60px] lg:pointer-events-none" href=""><p >Company</p><img id="farrow3" class="icon-size self-center rotate-90 lg:hidden" src="public/icon/arrow.png" alt=""></a>
+                <div id="fmenu-3" class="w-full h-auto absolute text-gray-500 flex flex-col gap-3 -translate-y-[220px] opacity-0 -z-1 lg:opacity-100 lg:translate-y-0 lg:z-1">
+                    <a class="hover:text-black" href=""><p>About Nike</p></a>
+                    <a class="hover:text-black" href=""><p>News</p></a>
+                    <a class="hover:text-black" href=""><p>Careers</p></a>
+                    <a class="hover:text-black" href=""><p>Investors</p></a>
+                    <a class="hover:text-black" href=""><p>Sustainability</p></a>
+                    <a class="hover:text-black" href=""><p>Report a Concern</p></a>
+                </div>
+            </div>
+            <a class="flex gap-1 border-b-1 border-gray-300 pb-[30px] text-gray-400 lg:pt-[60px] lg:border-0 lg:ml-40" href=""><img class="icon-size self-center" src="public/icon/globe.png" alt=""><p>Indonesia</p></a></a>
+        </div>
+        <div class="flex flex-col gap-2 mt-[30px] mx-6 text-[15px] font-semibold text-gray-400 pb-[100px] lg:mx-[70px] lg:mt-[280px] lg:gap-[40px] lg:flex-row">
+           <p>©2025 Nike,Inc.All rights reserved</p>
+           <div class="relative group hover:cursor-pointer">
+                <div class="flex flex-col absolute gap-2 w-[180px] h-auto py-2 bg-white drop-shadow-md text-black rounded-[7px] -translate-y-[320px] opacity-0 invisible group-hover:opacity-100 group-hover:visible z-5">
+                    <p class="hover:bg-gray-200 pl-3">Nike Air</p>
+                    <p class="hover:bg-gray-200 pl-3">Nike Air</p>
+                    <p class="hover:bg-gray-200 pl-3">Nike Air</p>
+                    <p class="hover:bg-gray-200 pl-3">Nike Air</p>
+                    <p class="hover:bg-gray-200 pl-3">Nike Air</p>
+                    <p class="hover:bg-gray-200 pl-3">Nike Air</p>
+                    <p class="hover:bg-gray-200 pl-3">Nike Air</p>
+                    <p class="hover:bg-gray-200 pl-3">Nike Air</p>
+                    <p class="hover:bg-gray-200 pl-3">Nike Air</p>
+                    <p class="hover:bg-gray-200 pl-3">Nike Air</p>
+                </div>
+                <a class="flex gap-2 hover:text-black"><p>Guides</p><img class="w-[13px] h-[13px] self-center rotate-90 arrow-footer group-hover:-rotate-90" src="public/icon/arrow.png" alt=""></a>
+           </div>
+           <p class="hover:text-black hover:cursor-pointer">Terms of Sale</p>
+           <p class="hover:text-black hover:cursor-pointer">Terms of Use</p>
+           <p class="hover:text-black hover:cursor-pointer">Nike Privacy Policy</p>
+        </div>
+    </footer>
+
+<script src="src/script.js"></script>
+</body>
+</html>

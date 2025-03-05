@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+    --font-opensans: "Open Sans", "serif"; 
+}
+
+html, body {
+    @apply overflow-x-hidden;
+}
+
+.font-size {
+    @apply text-2xl text-black flex justify-between;
+}
+
+.icon-size {
+    @apply w-[20px] h-[20px] self-center;
+}
+
+.font-size:hover {
+    filter: brightness(0) saturate(100%) invert(46%) sepia(7%) saturate(219%) hue-rotate(175deg) brightness(93%) contrast(93%);
+}
+
+.icon-hover {
+    @apply w-[35px] h-[35px] flex items-center justify-center bg-white rounded-full hover:bg-gray-200;
+}
+
+.icon-hover-search {
+    @apply w-[36px] h-[36px] flex items-center justify-center bg-[#F5F5F5] rounded-full;
+}
+
+nav {
+    transform: translateX(100%);
+    transition: all 0.5s;
+}
+
+.nav-active {
+    transform: translateX(0);
+}
+
+.overlay-active {
+    @apply block;
+}
+
+.overlay-active-lg {
+    @apply block z-5;
+}
+
+.katalog-1 {
+    @apply max-w-[300px] h-[300px] mb-6 lg:max-w-[400px] lg:h-[400px] lg:mb-[50px];
+}
+
+.katolog-member {
+    @apply max-w-[400px] h-[400px];
+}
+
+.menu-1-active {
+    @apply pb-[200px];
+    transition: all 0.5s;
+}
+
+.fmenu-1-active {
+    @apply opacity-100 z-1;
+    transition: all 0.9s;
+}
+
+.farrow1-active {
+    @apply -rotate-90;
+}
+
+.menu-2-active {
+    @apply pb-[250px];
+    transition: all 0.5s;
+}
+
+.fmenu-2-active {
+    @apply opacity-100 z-1;
+    transition: all 0.9s;
+}
+
+.farrow2-active {
+    @apply -rotate-90;
+}
+
+.menu-3-active {
+    @apply pb-[250px];
+    transition: all 0.5s;
+}
+
+.fmenu-3-active {
+    @apply opacity-100 z-1;
+    transition: all 0.9s;
+}
+
+.farrow3-active {
+    @apply -rotate-90;
+}
+
+.arrow-footer {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(8%) saturate(7500%) hue-rotate(169deg) brightness(83%) contrast(86%);
+}
+
+#search-menu {
+    transform: translateX(100%);
+    transition: all 0.4s;
+}
+
+.search-menu-active {
+    display: block !important;
+    transform: translateX(0) !important;
+}
+
+#hamburger {
+    @apply lg:hidden;
+}
+
+#search-lg {
+    @apply lg:hidden;
+}
+

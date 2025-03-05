@@ -6,7 +6,7 @@
     --font-opensans: "Open Sans", "serif"; 
 }
 
-html, body {
+hmtl, body {
     @apply overflow-x-hidden;
 }
 
@@ -119,3 +119,9 @@ nav {
     @apply lg:hidden;
 }
 
+//responsive mobile
+@media only screen and (min-width: 768px) {
+    body {
+        @apply overflow-x-hidden;
+    }
+}

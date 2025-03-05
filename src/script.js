@@ -142,54 +142,83 @@ document.getElementById("menu").addEventListener("click", function () {
 
 
 searchOpen.addEventListener("click", function () {
-    // Scroll ke atas
+
     window.scrollTo({ top: 0 });
 
-    // Hilangkan scroll pada body
     document.body.style.overflow = "hidden";
 
-    // Pastikan search menu bisa di-scroll
     searchMenu.style.overflowY = "auto";
 
-    // Tampilkan search menu
     searchMenu.classList.add("search-menu-active");
 });
 
 searchClose.addEventListener("click", function () {
-    // Aktifkan kembali scroll pada body
+    
     document.body.style.overflow = "auto";
 
-    // Hilangkan overflow scroll pada search menu
     searchMenu.style.overflowY = "hidden";
 
-    // Sembunyikan search menu
     searchMenu.classList.remove("search-menu-active");
 });
 
 searchLgMenu.addEventListener("click", function () {
-    // Scroll ke atas
+    
     window.scrollTo({ top: 0, behavior: "smooth" });
 
-    // Hilangkan scroll pada body
     document.body.style.overflow = "hidden";
 
-    // Pastikan search menu bisa di-scroll
     searchMenu.style.overflowY = "auto";
 
-    // Tampilkan search menu
     searchMenu.classList.add("search-menu-active");
 });
 
 searchClose.addEventListener("click", function () {
-    // Aktifkan kembali scroll pada body
+
     document.body.style.overflow = "auto";
 
-    // Hilangkan overflow scroll pada search menu
+    document.body.style.overflowX = "hidden";
+
     searchMenu.style.overflowY = "hidden";
 
-    // Sembunyikan search menu
     searchMenu.classList.remove("search-menu-active");
 });
+
+overlay.addEventListener('click', function(){
+    searchMenu.classList.remove('search-menu-active');
+
+    document.body.style.overflow = "auto";
+
+    document.body.style.overflowX = "hidden";
+})
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Mencegah efek overscroll pada body dan html
+    document.documentElement.style.overscrollBehaviorX = "none";
+    document.body.style.overscrollBehaviorX = "none";
+
+    // Event listener untuk mencegah scroll horizontal berlebihan
+    window.addEventListener("scroll", function () {
+        if (window.scrollX > 0) {
+            window.scrollTo(0, window.scrollY);
+        }
+    });
+
+    // Cegah geser horizontal di mobile tanpa mempengaruhi swipe elemen dengan scroll horizontal
+    window.addEventListener("touchmove", function (event) {
+        if (window.scrollX > 0) {
+            event.preventDefault();
+            window.scrollTo(0, window.scrollY);
+        }
+    }, { passive: false });
+});
+
+
+
+
+
+
+
+
 
 
 

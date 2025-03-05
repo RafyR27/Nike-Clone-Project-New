@@ -191,26 +191,47 @@ overlay.addEventListener('click', function(){
     document.body.style.overflowX = "hidden";
 })
 
+
+
 document.addEventListener("DOMContentLoaded", function () {
-    // Mencegah efek overscroll pada body dan html
+    // Mencegah overscroll horizontal
     document.documentElement.style.overscrollBehaviorX = "none";
     document.body.style.overscrollBehaviorX = "none";
 
-    // Event listener untuk mencegah scroll horizontal berlebihan
+    // Blokir swipe horizontal di seluruh halaman
+    window.addEventListener("touchmove", function (event) {
+        if (Math.abs(event.touches[0].clientX - event.touches[0].screenX) > 10) {
+            event.preventDefault();
+        }
+    }, { passive: false });
+
+    // Jika halaman ter-scroll horizontal, paksa kembali ke kiri
     window.addEventListener("scroll", function () {
         if (window.scrollX > 0) {
             window.scrollTo(0, window.scrollY);
         }
     });
 
-    // Cegah geser horizontal di mobile tanpa mempengaruhi swipe elemen dengan scroll horizontal
-    window.addEventListener("touchmove", function (event) {
-        if (window.scrollX > 0) {
-            event.preventDefault();
-            window.scrollTo(0, window.scrollY);
+    // Blokir swipe horizontal sebelum terjadi (di mobile)
+    window.addEventListener("touchstart", function (event) {
+        if (event.touches.length === 1) {
+            let touch = event.touches[0];
+            let startX = touch.clientX;
+
+            window.addEventListener("touchmove", function moveHandler(e) {
+                let moveX = e.touches[0].clientX;
+                let diffX = moveX - startX;
+
+                if (Math.abs(diffX) > 10) {
+                    e.preventDefault(); // Blokir swipe horizontal
+                }
+
+                window.removeEventListener("touchmove", moveHandler);
+            }, { passive: false });
         }
-    }, { passive: false });
+    });
 });
+
 
 
 

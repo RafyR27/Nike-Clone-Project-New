@@ -31,12 +31,12 @@ hmtl, body {
 }
 
 nav {
-    transform: translateX(100%);
-    transition: all 0.5s;
+    @apply opacity-0 invisible;
+    transition: all 0.3s;
 }
 
 .nav-active {
-    transform: translateX(0);
+    @apply opacity-100 visible;
 }
 
 .overlay-active {
@@ -101,14 +101,13 @@ nav {
     filter: brightness(0) saturate(100%) invert(100%) sepia(8%) saturate(7500%) hue-rotate(169deg) brightness(83%) contrast(86%);
 }
 
-#search-menu {
-    transform: translateX(100%);
-    transition: all 0.4s;
+.search-menu {
+    @apply opacity-0 invisible;
+    transition: all 0.3s;
 }
 
 .search-menu-active {
-    display: block !important;
-    transform: translateX(0) !important;
+    @apply opacity-100 visible;
 }
 
 #hamburger {
@@ -119,9 +118,3 @@ nav {
     @apply lg:hidden;
 }
 
-//responsive mobile
-@media only screen and (min-width: 768px) {
-    body {
-        @apply overflow-x-hidden;
-    }
-}

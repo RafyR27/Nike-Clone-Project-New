@@ -188,14 +188,8 @@
   }
 }
 @layer utilities {
-  .collapse {
-    visibility: collapse;
-  }
   .invisible {
     visibility: hidden;
-  }
-  .visible {
-    visibility: visible;
   }
   .absolute {
     position: absolute;
@@ -299,9 +293,6 @@
   .ml-\[30px\] {
     margin-left: 30px;
   }
-  .block {
-    display: block;
-  }
   .flex {
     display: flex;
   }
@@ -310,15 +301,6 @@
   }
   .hidden {
     display: none;
-  }
-  .inline-flex {
-    display: inline-flex;
-  }
-  .list-item {
-    display: list-item;
-  }
-  .table {
-    display: table;
   }
   .h-\[13px\] {
     height: 13px;
@@ -401,9 +383,6 @@
   .min-w-\[300px\] {
     min-width: 300px;
   }
-  .border-collapse {
-    border-collapse: collapse;
-  }
   .-translate-y-\[110\%\] {
     --tw-translate-y: calc(110% * -1);
     translate: var(--tw-translate-x) var(--tw-translate-y);
@@ -423,14 +402,8 @@
   .rotate-90 {
     rotate: 90deg;
   }
-  .transform {
-    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
-  }
   .cursor-pointer {
     cursor: pointer;
-  }
-  .resize {
-    resize: both;
   }
   .grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -500,10 +473,6 @@
   }
   .rounded-full {
     border-radius: calc(infinity * 1px);
-  }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
   }
   .border-\[1px\] {
     border-style: var(--tw-border-style);
@@ -682,42 +651,15 @@
   .uppercase {
     text-transform: uppercase;
   }
-  .underline {
-    text-decoration-line: underline;
-  }
   .opacity-0 {
     opacity: 0%;
   }
   .opacity-50 {
     opacity: 50%;
   }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
-  }
-  .drop-shadow {
-    --tw-drop-shadow: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow( 0 1px 1px rgb(0 0 0 / 0.06));
-    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
-  }
   .drop-shadow-md {
     --tw-drop-shadow: drop-shadow(var(--drop-shadow-md));
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
-  }
-  .invert {
-    --tw-invert: invert(100%);
-    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
-  }
-  .sepia {
-    --tw-sepia: sepia(100%);
-    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
-  }
-  .filter {
-    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
-  }
-  .transition {
-    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter;
-    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
-    transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
   .group-hover\:visible {
     &:is(:where(.group):hover *) {
@@ -1173,11 +1115,13 @@ hmtl, body {
   background-color: #F5F5F5;
 }
 nav {
-  transform: translateX(100%);
-  transition: all 0.5s;
+  visibility: hidden;
+  opacity: 0%;
+  transition: all 0.3s;
 }
 .nav-active {
-  transform: translateX(0);
+  visibility: visible;
+  opacity: 100%;
 }
 .overlay-active {
   display: block;
@@ -1243,13 +1187,14 @@ nav {
 .arrow-footer {
   filter: brightness(0) saturate(100%) invert(100%) sepia(8%) saturate(7500%) hue-rotate(169deg) brightness(83%) contrast(86%);
 }
-#search-menu {
-  transform: translateX(100%);
-  transition: all 0.4s;
+.search-menu {
+  visibility: hidden;
+  opacity: 0%;
+  transition: all 0.3s;
 }
 .search-menu-active {
-  display: block !important;
-  transform: translateX(0) !important;
+  visibility: visible;
+  opacity: 100%;
 }
 #hamburger {
   @media (width >= 64rem) {
@@ -1259,11 +1204,6 @@ nav {
 #search-lg {
   @media (width >= 64rem) {
     display: none;
-  }
-}
-//responsive mobile @media only screen and (min-width: 768px) {
-  body {
-    overflow-x: hidden;
   }
 }
 @property --tw-translate-x {
@@ -1281,31 +1221,6 @@ nav {
   inherits: false;
   initial-value: 0;
 }
-@property --tw-rotate-x {
-  syntax: "*";
-  inherits: false;
-  initial-value: rotateX(0);
-}
-@property --tw-rotate-y {
-  syntax: "*";
-  inherits: false;
-  initial-value: rotateY(0);
-}
-@property --tw-rotate-z {
-  syntax: "*";
-  inherits: false;
-  initial-value: rotateZ(0);
-}
-@property --tw-skew-x {
-  syntax: "*";
-  inherits: false;
-  initial-value: skewX(0);
-}
-@property --tw-skew-y {
-  syntax: "*";
-  inherits: false;
-  initial-value: skewY(0);
-}
 @property --tw-border-style {
   syntax: "*";
   inherits: false;
@@ -1314,11 +1229,6 @@ nav {
 @property --tw-font-weight {
   syntax: "*";
   inherits: false;
-}
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
 }
 @property --tw-blur {
   syntax: "*";

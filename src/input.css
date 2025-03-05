@@ -7,7 +7,7 @@
 }
 
 hmtl, body {
-    @apply overflow-x-hidden;
+    @apply overflow-x-hidden max-w-full;
 }
 
 .font-size {
@@ -116,5 +116,22 @@ nav {
 
 #search-lg {
     @apply lg:hidden;
+}
+
+.guide-menu {
+    @apply opacity-0 invisible;
+}
+
+.guide-menu-active {
+    @apply opacity-100 visible;
+}
+
+.arrow-guide {
+    @apply rotate-90;
+}
+
+.arrow-guide-active {
+    @apply -rotate-90;
+    filter: brightness(0) saturate(100%);
 }
 

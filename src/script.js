@@ -120,6 +120,16 @@ footerMenu3.addEventListener('click', function(){
         }
 })
 
+const guideOpen = document.querySelector('#guides');
+const arrowOpen = document.querySelector('#arrow-guide');
+const guideMenu = document.querySelector('#guide-menu-1');
+
+guideOpen.addEventListener('click',function(){
+    guideMenu.classList.toggle('guide-menu-active');
+    arrowOpen.classList.toggle('arrow-guide');
+    arrowOpen.classList.toggle('arrow-guide-active');
+})
+
 document.getElementById("menu").addEventListener("click", function () {
     window.scrollTo({ top: 0 });
 

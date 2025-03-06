@@ -7,7 +7,7 @@
 }
 
 hmtl, body {
-    @apply overflow-x-hidden max-w-full;
+    @apply overflow-x-hidden;
 }
 
 .font-size {

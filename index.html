@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <div class="w-full h-[70px] lg:h-[65px] bg-white flex fixed justify-between items-center top-0 z-10">
+        <div class="w-[100vw] h-[70px] lg:h-[65px] bg-white flex fixed justify-between items-center top-0 z-10">
             <div class="w-full h-[40px] top-0 bg-white absolute -z-1"></div>
             <img loading="lazy" class="w-[60px] ml-[30px] lg:ml-[40px] lg:mr-[200px]" src="/src/img/nike.png">
             <div id="menu-lg" class="hidden lg:flex font-opensans text-black">
@@ -310,7 +310,7 @@
                     <li id="SNKRS" class="hover:underline-offset-5 hover:underline hover:cursor-pointer">SNKRS</li>
                 </ul>
             </div>
-            <div class="flex gap-3 mr-[40px] lg:mr-[40px]">
+            <div class="flex gap-3 mr-[20px] lg:mr-[40px]">
                 <div id="search-lg-menu" class="group hidden lg:block">
                     <a class="icon-hover-search absolute"><i class="fa-solid fa-magnifying-glass fa-lg" style="color: gray;"></i></a>
                     <input class="bg-[#F5F5F5] py-[5px] w-[170px] px-2 pl-10 text-[17px] text-black font-semibold rounded-full focus:outline-none group-hover:bg-gray-200" type="search" placeholder="Search">
@@ -345,8 +345,8 @@
                 </div>
             </div>
         </div>
-        <div id="overlay" class="w-[100%] h-[100vh] top-0 right-0 bg-black opacity-50 fixed z-40 hidden"></div>
-        <nav class="w-[82%] h-full bg-white absolute items-end right-0 top-0 z-50">
+        <div id="overlay" class="w-[100%] h-[100%] top-0 right-0 bg-black opacity-50 fixed z-40 hidden"></div>
+        <nav class="w-[82%] h-vhd bg-white absolute items-end right-0 top-0 z-50">
             <div id="menu-close" class="flex justify-end px-9 pt-7 pb-5">
                 <a class="icon-hover"><i class="fa-solid fa-x fa-lg"></i></a>
             </div>
@@ -377,9 +377,9 @@
         py-3 px-2 font-semibold text-[12px] flex items-center justify-center text-black">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat doloribus ad aspernatur.</p>
     </section>
 
-    <section class="w-full h-[87vh] bg-white">
-        <div class="flex flex-col items-center bg-cover bg-center lg:w-[100%] lg:h-[80%] lg:bg-[url(/src/img/sepatu-utama-lg.jpg)]">
-            <img loading="lazy" class="max-w-[350px] h-full mt-2 lg:hidden" src="src/img/sepatu-utama.jpg" alt="">
+    <section class="w-full h-dvh bg-white">
+        <div class="flex flex-col items-center bg-cover bg-center lg:max-w-[100%] lg:h-[80%] lg:bg-[url(/src/img/sepatu-utama-lg.jpg)]">
+            <img loading="lazy" class="max-w-[350px] h-auto mt-2 lg:hidden" src="src/img/sepatu-utama.jpg" alt="">
         </div>
         <div class="text-left ml-6 lg:flex lg:flex-col lg:justify-center lg:items-center lg:ml-0">
             <h1 class="font-opensans font-extrabold uppercase text-4xl mt-[40px] lg:text-7xl">Nike Shoes</h1>
@@ -478,7 +478,7 @@
         <div class="flex flex-col gap-[30px] mx-6 text-[15px] font-semibold hover:cursor-pointer border-t-1 border-gray-300 lg:flex-row lg:justify-between lg:mx-[70px] lg:hover:cursor-text">
             <div id="footer-menu-1">
                 <a id="menu-1" class="flex justify-between border-b-1 border-gray-300 pb-[30px] pt-[60px] lg:border-0 lg:pointer-events-none" href=""><p >Resources</p><img loading="lazy" id="farrow1" class="icon-size self-center rotate-90 lg:hidden lg:pointer-events-none" src="src/icon/arrow.png" alt=""></a>
-                <div id="fmenu-1" class="w-full h-auto absolute text-gray-500 flex flex-col gap-3 -translate-y-[180px] opacity-0 -z-1 lg:opacity-100 lg:translate-y-0 lg:z-1">
+                <div id="fmenu-1" class="absolute text-gray-500 flex flex-col gap-3 -translate-y-[180px] opacity-0 -z-1 lg:opacity-100 lg:translate-y-0 lg:z-1">
                     <a class="hover:text-black" href=""><p>Find A Store</p></a>
                     <a class="hover:text-black" href=""><p>Become A Member</p></a>
                     <a class="hover:text-black" href=""><p>Education Discounts</p></a>
@@ -487,7 +487,7 @@
             </div>
             <div id="footer-menu-2">
                 <a id="menu-2" class="flex justify-between border-b-1 border-gray-300 pb-[30px] lg:border-0 lg:pt-[60px] lg:pointer-events-none" href=""><p >Help</p><img loading="lazy" id="farrow2" class="icon-size self-center rotate-90 lg:hidden" src="src/icon/arrow.png" alt=""></a>
-                <div id="fmenu-2" class="w-full h-auto absolute text-gray-500 flex flex-col gap-3 -translate-y-[220px] opacity-0 -z-1 lg:opacity-100 lg:translate-y-0 lg:z-1">
+                <div id="fmenu-2" class="absolute text-gray-500 flex flex-col gap-3 -translate-y-[220px] opacity-0 -z-1 lg:opacity-100 lg:translate-y-0 lg:z-1">
                     <a class="hover:text-black" href=""><p>Get Help</p></a>
                     <a class="hover:text-black" href=""><p>Order Status</p></a>
                     <a class="hover:text-black" href=""><p>Delivery</p></a>
@@ -498,7 +498,7 @@
             </div>
             <div id="footer-menu-3">
                 <a id="menu-3" class="flex justify-between border-b-1 border-gray-300 pb-[30px] lg:border-0 lg:pt-[60px] lg:pointer-events-none" href=""><p >Company</p><img loading="lazy" id="farrow3" class="icon-size self-center rotate-90 lg:hidden" src="src/icon/arrow.png" alt=""></a>
-                <div id="fmenu-3" class="w-full h-auto absolute text-gray-500 flex flex-col gap-3 -translate-y-[220px] opacity-0 -z-1 lg:opacity-100 lg:translate-y-0 lg:z-1">
+                <div id="fmenu-3" class="absolute text-gray-500 flex flex-col gap-3 -translate-y-[220px] opacity-0 -z-1 lg:opacity-100 lg:translate-y-0 lg:z-1">
                     <a class="hover:text-black" href=""><p>About Nike</p></a>
                     <a class="hover:text-black" href=""><p>News</p></a>
                     <a class="hover:text-black" href=""><p>Careers</p></a>
